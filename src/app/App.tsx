@@ -423,9 +423,9 @@ export default function App() {
             <div className="grid lg:grid-cols-3 gap-8 items-start mb-12">
               {/* Left - Profile Image */}
               <AnimatedSection delay={100}>
-                <div className="relative rounded-2xl overflow-hidden aspect-square group cursor-pointer border-4 border-cyan-500/20 hover:border-cyan-500/50 transition-all">
+                <div className="relative rounded-2xl overflow-hidden aspect-[2/3] group cursor-pointer border-4 border-cyan-500/20 hover:border-cyan-500/50 transition-all">
                   <img
-                    src={profileImage3}
+                    src={profileImage7}
                     alt="Nguyễn Viết Doanh"
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                   />
