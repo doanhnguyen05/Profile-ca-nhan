@@ -674,14 +674,14 @@ export default function App() {
                   icon: Code,
                   color: 'from-blue-500 to-cyan-500',
                   description: 'Các kỹ năng đã sử dụng trong dự án học phần và đang tiếp tục củng cố.',
-                  items: ['.NET Core (1 năm)', 'CSS (1 năm)', 'Git/GitHub (1 năm)', 'HTML5 (1 năm)', 'JavaScript (1 năm)', 'MySQL (1 năm)', 'UI-UX (1 năm)'],
+                  items: ['.NET Core (1 năm)', 'Java (< 1 năm)', 'React (< 1 năm)', 'CSS (1 năm)', 'Git/GitHub (1 năm)', 'HTML5 (1 năm)', 'JavaScript (1 năm)', 'MySQL (1 năm)', 'UI-UX (1 năm)'],
                 },
                 {
                   category: 'Kỹ năng bổ sung',
                   icon: Brain,
                   color: 'from-purple-500 to-pink-500',
                   description: 'Các công nghệ tôi đã tiếp cận qua dự án, nghiên cứu và sản phẩm demo.',
-                  items: ['Artificial Intelligence (< 1 năm)', 'ElasticSearch (< 1 năm)', 'Java (< 1 năm)', 'Mobile Development (< 1 năm)', 'PostgreSQL (< 1 năm)', 'RabbitMQ (< 1 năm)', 'REST API (< 1 năm)'],
+                  items: ['Artificial Intelligence (< 1 năm)', 'ElasticSearch (< 1 năm)', 'Mobile Development (< 1 năm)', 'PostgreSQL (< 1 năm)', 'RabbitMQ (< 1 năm)', 'REST API (< 1 năm)'],
                 },
                 {
                   category: 'Kỹ năng mềm & ngoại ngữ',
