@@ -874,8 +874,7 @@ export default function App() {
                 {
                   title: 'Nghiên cứu, thử nghiệm một số tính năng bảo mật trên hệ quản trị CSDL MariaDB và PostgreSQL',
                   description: 'Đề tài có sản phẩm thử nghiệm các cơ chế bảo mật, phân quyền, xác thực và kiểm soát truy cập trên MariaDB/PostgreSQL.',
-                  product: 'Bộ kịch bản thử nghiệm và cấu hình minh họa cho các tính năng bảo mật database.',
-                  contribution: 'Tôi tham gia tìm hiểu tài liệu, dựng môi trường thử nghiệm, chạy các case kiểm tra phân quyền/truy cập, ghi nhận kết quả và hỗ trợ tổng hợp nội dung cho bài nghiên cứu.',
+                  contribution: 'Tôi trực tiếp dựng môi trường MariaDB/PostgreSQL, tạo user/role mẫu, cấu hình phân quyền, chạy các kịch bản kiểm tra truy cập trái phép và ghi nhận kết quả để làm bộ demo minh họa cho đề tài.',
                   status: 'Đã xuất bản trên IEEE',
                   type: 'published',
                   link: 'https://ieeexplore.ieee.org/document/11473793',
@@ -886,8 +885,7 @@ export default function App() {
                 {
                   title: 'Nghiên cứu bảo mật trên Apache Spark và Elasticsearch',
                   description: 'Đề tài hướng đến sản phẩm Web quản lý, lưu trữ và tìm kiếm tài liệu được mã hóa bằng Apache Spark và Elasticsearch.',
-                  product: 'Demo hệ thống tìm kiếm tài liệu, xử lý dữ liệu và kiểm tra các yêu cầu bảo mật khi lưu trữ/tìm kiếm.',
-                  contribution: 'Tôi thử nghiệm cách lưu trữ, tìm kiếm tài liệu, xử lý dữ liệu và tìm hiểu các rủi ro liên quan đến dữ liệu được mã hóa.',
+                  contribution: 'Tôi tham gia xây dựng luồng demo cho hệ thống: đưa tài liệu vào hệ thống, xử lý dữ liệu, lập chỉ mục tìm kiếm, kiểm tra kết quả tìm kiếm và ghi nhận các điểm cần bảo vệ khi lưu trữ/tìm kiếm tài liệu mã hóa.',
                   status: 'Đã hoàn thành',
                   type: 'completed',
                   icon: Search,
@@ -897,8 +895,7 @@ export default function App() {
                 {
                   title: 'Hệ thống quản lý thông điệp RabbitMQ kết hợp AI',
                   description: 'Sản phẩm đang nghiên cứu dùng RabbitMQ và AI để hỗ trợ tạo sinh, quản lý ngân hàng câu hỏi trắc nghiệm.',
-                  product: 'Prototype luồng gửi/nhận thông điệp, xử lý hàng đợi và hỗ trợ tạo/phân loại câu hỏi bằng AI.',
-                  contribution: 'Tôi đang tìm hiểu luồng gửi/nhận thông điệp, cách tổ chức hàng đợi và cách AI có thể hỗ trợ tạo, phân loại câu hỏi.',
+                  contribution: 'Tôi đang tham gia thiết kế prototype luồng gửi/nhận thông điệp, xây dựng hàng đợi xử lý câu hỏi, mô phỏng bước tạo/phân loại câu hỏi bằng AI và kiểm tra cách hệ thống xử lý khi có nhiều yêu cầu.',
                   status: 'Đang thực hiện',
                   type: 'ongoing',
                   icon: MessageSquare,
@@ -908,8 +905,7 @@ export default function App() {
                 {
                   title: 'Hệ thống tư vấn tuyển sinh tích hợp AI và Security',
                   description: 'Đề tài cấp trường phát triển sản phẩm tư vấn tuyển sinh, chọn ngành/chuyên ngành cho Trường Đại học Điện lực.',
-                  product: 'Demo hệ thống tư vấn tích hợp AI, dữ liệu ngành học và các yêu cầu bảo mật cho người dùng.',
-                  contribution: 'Tôi đang hỗ trợ phân tích nhu cầu người dùng, luồng tư vấn, dữ liệu ngành học và các yêu cầu bảo mật cho hệ thống.',
+                  contribution: 'Tôi đang tham gia phân tích nhu cầu thí sinh, chuẩn bị dữ liệu ngành học/chuyên ngành, xây dựng luồng hỏi đáp tư vấn, kiểm tra câu trả lời gợi ý và bổ sung các yêu cầu bảo mật cho thông tin người dùng.',
                   status: 'Đề tài cấp trường - Đang thực hiện',
                   type: 'ongoing',
                   icon: Lightbulb,
@@ -919,8 +915,7 @@ export default function App() {
                 {
                   title: 'Hệ thống quản lý công văn ứng dụng OCR và chữ ký số',
                   description: 'Sản phẩm đang nghiên cứu hỗ trợ quản lý công văn đi/đến bằng OCR, chữ ký số và quy trình xử lý điện tử.',
-                  product: 'Prototype quản lý công văn, nhận dạng nội dung văn bản và tích hợp xác thực/chữ ký số.',
-                  contribution: 'Tôi đang tìm hiểu cách nhận dạng nội dung văn bản, quản lý trạng thái công văn và tích hợp chữ ký số vào quy trình xử lý.',
+                  contribution: 'Tôi đang tham gia xây dựng prototype quản lý công văn: nhập công văn, nhận dạng nội dung bằng OCR, theo dõi trạng thái xử lý và tìm hiểu cách tích hợp chữ ký số vào quy trình xác nhận tài liệu.',
                   status: 'Đang thực hiện',
                   type: 'ongoing',
                   icon: FileText,
@@ -945,10 +940,6 @@ export default function App() {
                         </span>
                       </div>
                       <p className="text-slate-400 text-sm mb-4 leading-relaxed">{research.description}</p>
-                      <div className="mb-4 rounded-xl bg-slate-900/60 border border-slate-700/50 p-3">
-                        <div className="text-xs font-semibold uppercase tracking-wide text-cyan-400 mb-1">Sản phẩm / demo</div>
-                        <p className="text-sm text-slate-300 leading-relaxed">{research.product}</p>
-                      </div>
                       <button
                         type="button"
                         onClick={() => setExpandedResearch((current) => ({ ...current, [index]: !current[index] }))}
