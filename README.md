@@ -4,7 +4,16 @@ Website portfolio giới thiệu thông tin cá nhân, định hướng nghề n
 
 ## Giới thiệu
 
-Tôi là Nguyễn Viết Doanh, sinh viên năm 3 Trường Đại học Điện lực, định hướng phát triển trong lĩnh vực Web, Mobile, AI và bảo mật hệ thống. Portfolio này được xây dựng để tổng hợp hồ sơ cá nhân, các dự án đã thực hiện và những chủ đề nghiên cứu quan tâm.
+Tôi là Nguyễn Viết Doanh, sinh viên năm 3 Trường Đại học Điện lực, đang tìm cơ hội thực tập hoặc vị trí fresher trong lĩnh vực phát triển phần mềm. Tôi tập trung vào Web Development, Backend cơ bản, cơ sở dữ liệu và có quan tâm đến AI ứng dụng, bảo mật dữ liệu.
+
+Portfolio này được xây dựng để HR và nhà tuyển dụng có thể nắm nhanh hồ sơ cá nhân, kỹ năng, dự án môn học, đề tài nghiên cứu và cách tôi tham gia vào từng hạng mục công việc.
+
+## Điểm nổi bật
+
+- Có kinh nghiệm làm các dự án môn học về quản lý nhà trọ, hệ thống học trực tuyến, ứng dụng mobile và AI.
+- Từng tham gia nghiên cứu về bảo mật cơ sở dữ liệu, Apache Spark, Elasticsearch, RabbitMQ, OCR, chữ ký số và hệ thống tư vấn tích hợp AI.
+- Có thể hỗ trợ nhiều phần việc trong nhóm: phân tích chức năng, thiết kế giao diện, xử lý CRUD, kết nối database, viết tài liệu và demo sản phẩm.
+- Tài lẻ: thiết kế giao diện, làm slide, trình bày demo, viết tài liệu mô tả sản phẩm.
 
 ## Công nghệ sử dụng
 
@@ -56,9 +65,9 @@ src/
 ## Nội dung nổi bật
 
 - Giới thiệu bản thân và mục tiêu nghề nghiệp
-- Kỹ năng Web, Mobile, AI, Database và Security
-- Dự án học tập và sản phẩm đã xây dựng
-- Các chủ đề nghiên cứu khoa học
+- Kỹ năng chính, kỹ năng bổ sung và kỹ năng mềm
+- Dự án học tập kèm mô tả vai trò đã thực hiện
+- Các đề tài nghiên cứu kèm trạng thái và phần việc đang tham gia
 - Thông tin liên hệ và liên kết mạng xã hội
 
 ## Repository

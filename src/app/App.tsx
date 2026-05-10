@@ -315,15 +315,15 @@ export default function App() {
                   <div className="text-xl sm:text-2xl text-slate-300 h-20">
                     <TypeAnimation
                       sequence={[
-                        'IT Student 🎓',
+                        'Sinh viên Công nghệ thông tin',
                         2000,
-                        'Web Developer 💻',
+                        'Định hướng Web Developer',
                         2000,
-                        'Mobile Developer 📱',
+                        'Có nền tảng Mobile & Backend',
                         2000,
-                        'AI Enthusiast 🤖',
+                        'Quan tâm AI ứng dụng',
                         2000,
-                        'Security Researcher 🔒',
+                        'Tham gia nghiên cứu bảo mật',
                         2000,
                       ]}
                       wrapper="span"
@@ -333,8 +333,9 @@ export default function App() {
                   </div>
 
                   <p className="text-lg text-slate-400 leading-relaxed max-w-2xl">
-                    Sinh viên năm 3 Trường Đại học Điện lực, GPA 3.39. Đam mê phát triển phần mềm,
-                    ứng dụng AI và bảo mật hệ thống. Luôn học hỏi và sáng tạo để xây dựng các giải pháp công nghệ hiện đại.
+                    Sinh viên năm 3 Trường Đại học Điện lực, GPA 3.39. Tôi tập trung xây dựng nền tảng lập trình Web,
+                    Backend và Mobile, đồng thời tham gia các đề tài nghiên cứu về AI, dữ liệu và bảo mật để hiểu cách phần mềm
+                    được ứng dụng trong bài toán thực tế.
                   </p>
 
                   {/* Stats */}
@@ -394,14 +395,14 @@ export default function App() {
                     <div className="absolute -top-6 -right-6 px-4 py-2 bg-gradient-to-r from-green-500 to-emerald-500 rounded-full shadow-lg" style={{ animation: 'float 3s infinite' }}>
                       <div className="flex items-center gap-2">
                         <Zap className="w-5 h-5 text-white" />
-                        <span className="font-semibold text-white">Active</span>
+                        <span className="font-semibold text-white">Sẵn sàng học hỏi</span>
                       </div>
                     </div>
 
                     <div className="absolute -bottom-6 -left-6 px-4 py-2 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full shadow-lg" style={{ animation: 'float 3s infinite 1.5s' }}>
                       <div className="flex items-center gap-2">
                         <Star className="w-5 h-5 text-white" />
-                        <span className="font-semibold text-white">Top Student</span>
+                        <span className="font-semibold text-white">GPA 3.39</span>
                       </div>
                     </div>
                   </div>
@@ -440,20 +441,34 @@ export default function App() {
                   <div className="space-y-4 text-slate-300 leading-relaxed">
                     <p className="text-lg">
                       Tôi là <span className="font-semibold text-cyan-400">Nguyễn Viết Doanh</span>, sinh viên năm 3 Trường Đại học Điện lực,
-                      có định hướng phát triển trong lĩnh vực lập trình Web, Mobile, AI và bảo mật hệ thống.
+                      đang tìm cơ hội thực tập hoặc vị trí fresher để được làm việc trong môi trường phát triển phần mềm thực tế.
                     </p>
                     <p>
-                      Trong quá trình học tập, tôi đã thực hiện nhiều dự án môn học liên quan đến quản lý nhà trọ,
-                      hệ thống quản lý đào tạo trực tuyến, ứng dụng di động và hệ thống ứng dụng trí tuệ nhân tạo.
+                      Trong các dự án môn học, tôi thường đảm nhận việc phân tích chức năng, thiết kế giao diện, xây dựng luồng xử lý,
+                      kết nối cơ sở dữ liệu và kiểm thử các thao tác chính. Tôi ưu tiên cách làm rõ ràng, dễ bảo trì và dễ bàn giao cho nhóm.
                     </p>
                     <p>
-                      Bên cạnh các dự án học tập, tôi cũng tham gia nhiều đề tài nghiên cứu khoa học về bảo mật cơ sở dữ liệu,
-                      Apache Spark, Elasticsearch, RabbitMQ, AI, OCR, chữ ký số và hệ thống thông tin hỗ trợ giáo dục.
+                      Bên cạnh học phần chuyên ngành, tôi tham gia các đề tài nghiên cứu về bảo mật cơ sở dữ liệu, tìm kiếm dữ liệu,
+                      hàng đợi thông điệp, AI, OCR và chữ ký số. Các đề tài này giúp tôi hiểu thêm về cách thu thập yêu cầu,
+                      đọc tài liệu kỹ thuật, thử nghiệm giải pháp và trình bày kết quả.
                     </p>
                     <p>
-                      Mục tiêu của tôi là trở thành một <span className="font-semibold text-blue-400">Senior Full Stack Developer</span> có
-                      khả năng phát triển hệ thống trên cả Web, Mobile và AI.
+                      Điểm mạnh của tôi là tinh thần chủ động, chịu khó học công nghệ mới và có thể chuyển đổi linh hoạt giữa các phần việc
+                      như frontend, backend cơ bản, database, tài liệu kỹ thuật và demo sản phẩm.
                     </p>
+                  </div>
+
+                  <div className="grid sm:grid-cols-3 gap-4">
+                    {[
+                      { title: 'Điểm mạnh', value: 'Chủ động học, bám việc đến khi có kết quả' },
+                      { title: 'Tài lẻ', value: 'Thiết kế giao diện, làm slide, viết tài liệu và demo sản phẩm' },
+                      { title: 'Phù hợp', value: 'Web intern, fresher developer, AI/data assistant' },
+                    ].map((item) => (
+                      <div key={item.title} className="bg-slate-800/50 rounded-xl p-4 border border-slate-700/50">
+                        <div className="text-sm font-semibold text-cyan-400 mb-2">{item.title}</div>
+                        <p className="text-sm text-slate-300 leading-relaxed">{item.value}</p>
+                      </div>
+                    ))}
                   </div>
 
                   {/* Skills Progress */}
@@ -649,53 +664,39 @@ export default function App() {
               <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-cyan-500 mx-auto mb-12"></div>
             </AnimatedSection>
 
-            <div className="grid md:grid-cols-2 gap-6">
+            <div className="grid lg:grid-cols-3 gap-6">
               {[
                 {
-                  category: 'Ngôn ngữ lập trình',
+                  category: 'Kỹ năng chính',
                   icon: Code,
                   color: 'from-blue-500 to-cyan-500',
-                  items: ['Java', 'C#', 'JavaScript', 'SQL', 'Python'],
+                  description: 'Nhóm kỹ năng tôi muốn phát triển thành hướng nghề nghiệp chính.',
+                  items: ['Web Development', 'HTML/CSS/JavaScript', 'React cơ bản', 'C#/.NET MVC', 'Java OOP', 'SQL & Database'],
                 },
                 {
-                  category: 'Phát triển Web',
-                  icon: Globe,
-                  color: 'from-purple-500 to-pink-500',
-                  items: ['HTML', 'CSS', 'JavaScript', 'MVC', 'Backend Integration'],
-                },
-                {
-                  category: 'Phát triển Mobile',
-                  icon: Smartphone,
-                  color: 'from-green-500 to-teal-500',
-                  items: ['Mobile UI', 'App Design', 'API Integration'],
-                },
-                {
-                  category: 'Cơ sở dữ liệu',
-                  icon: Database,
-                  color: 'from-orange-500 to-red-500',
-                  items: ['MySQL', 'MariaDB', 'PostgreSQL', 'SQL Server'],
-                },
-                {
-                  category: 'AI & Data',
+                  category: 'Kỹ năng bổ sung',
                   icon: Brain,
-                  color: 'from-indigo-500 to-blue-500',
-                  items: ['AI Application', 'Data Processing', 'Elasticsearch', 'Apache Spark'],
+                  color: 'from-purple-500 to-pink-500',
+                  description: 'Các mảng tôi đã tiếp cận qua học phần và nghiên cứu, có thể hỗ trợ thêm cho dự án.',
+                  items: ['Mobile UI', 'API Integration', 'AI ứng dụng', 'OCR', 'Elasticsearch', 'RabbitMQ', 'Database Security'],
                 },
                 {
-                  category: 'Bảo mật',
-                  icon: Shield,
-                  color: 'from-red-500 to-pink-500',
-                  items: ['Database Security', 'Authentication', 'Digital Signature', 'OCR'],
+                  category: 'Kỹ năng mềm',
+                  icon: Users,
+                  color: 'from-green-500 to-teal-500',
+                  description: 'Những năng lực giúp tôi phối hợp tốt hơn khi làm việc nhóm và báo cáo tiến độ.',
+                  items: ['Tự học nhanh', 'Làm việc nhóm', 'Viết tài liệu', 'Trình bày demo', 'Phân tích yêu cầu', 'Kiên trì xử lý lỗi'],
                 },
               ].map((skill, index) => (
                 <AnimatedSection key={index} delay={index * 100}>
-                  <div className="bg-slate-800/50 backdrop-blur-sm rounded-2xl p-6 border border-slate-700/50 hover:border-cyan-500/50 hover:scale-105 transition-all group">
+                  <div className="h-full bg-slate-800/50 backdrop-blur-sm rounded-2xl p-6 border border-slate-700/50 hover:border-cyan-500/50 hover:scale-105 transition-all group">
                     <div className="flex items-center gap-4 mb-4">
                       <div className={`p-3 rounded-xl bg-gradient-to-r ${skill.color}`}>
                         <skill.icon className="w-6 h-6 text-white" />
                       </div>
                       <h3 className="text-xl font-bold">{skill.category}</h3>
                     </div>
+                    <p className="text-sm text-slate-400 leading-relaxed mb-4">{skill.description}</p>
                     <div className="flex flex-wrap gap-2">
                       {skill.items.map((item, i) => (
                         <span
@@ -738,7 +739,8 @@ export default function App() {
               {[
                 {
                   title: 'Quản lý nhà trọ .NET',
-                  description: 'Hệ thống quản lý nhà trọ với C#, .NET, MVC và SQL. Quản lý phòng trọ, khách thuê, hợp đồng và hóa đơn.',
+                  description: 'Dự án môn học mô phỏng quy trình quản lý nhà trọ: phòng, khách thuê, hợp đồng và hóa đơn.',
+                  role: 'Tôi xây dựng các màn hình quản lý chính, xử lý CRUD, kết nối SQL và kiểm thử các luồng thêm, sửa, xóa, tra cứu dữ liệu.',
                   tech: ['C#', '.NET', 'MVC', 'SQL'],
                   github: 'https://github.com/doanhnguyen05/Quanlynhatro.net.git',
                   icon: Server,
@@ -747,7 +749,8 @@ export default function App() {
                 },
                 {
                   title: 'Quản lý nhà trọ Java',
-                  description: 'Ứng dụng Java với OOP và JDBC. Xây dựng các lớp quản lý phòng, khách thuê, hợp đồng và hóa đơn.',
+                  description: 'Ứng dụng Java giúp luyện tư duy lập trình hướng đối tượng và xử lý dữ liệu quản lý nhà trọ.',
+                  role: 'Tôi thiết kế các lớp nghiệp vụ, viết chức năng quản lý phòng/khách thuê/hợp đồng và kết nối dữ liệu bằng JDBC.',
                   tech: ['Java', 'OOP', 'JDBC'],
                   github: 'https://github.com/doanhnguyen05/Quanlynhatrojava.git',
                   icon: Code,
@@ -756,7 +759,8 @@ export default function App() {
                 },
                 {
                   title: 'Edu LMS Web',
-                  description: 'Hệ thống quản lý đào tạo trực tuyến hỗ trợ người học, giảng viên và quản trị viên.',
+                  description: 'Website quản lý đào tạo trực tuyến phục vụ người học, giảng viên và quản trị viên.',
+                  role: 'Tôi tham gia phân tích chức năng, xây dựng giao diện, tổ chức dữ liệu khóa học và kiểm tra các luồng đăng nhập, học tập, quản lý nội dung.',
                   tech: ['HTML', 'CSS', 'JavaScript', 'Backend', 'Database'],
                   github: 'https://github.com/doanhnguyen05/Edu_LMS.git',
                   icon: GraduationCap,
@@ -765,7 +769,8 @@ export default function App() {
                 },
                 {
                   title: 'Mobile EduLMS',
-                  description: 'Ứng dụng học tập trên thiết bị di động với giao diện thân thiện và tích hợp API.',
+                  description: 'Phiên bản mobile cho hệ thống học tập, tập trung vào trải nghiệm sử dụng trên thiết bị di động.',
+                  role: 'Tôi thiết kế luồng màn hình, xây dựng giao diện thân thiện, chuẩn bị dữ liệu hiển thị và kết nối các chức năng qua API.',
                   tech: ['Mobile', 'UI/UX', 'API', 'User Experience'],
                   github: 'https://github.com/doanhnguyen05/MobileEduLMS.git',
                   icon: Smartphone,
@@ -774,7 +779,8 @@ export default function App() {
                 },
                 {
                   title: 'Hệ thống sàng lọc AI',
-                  description: 'Ứng dụng AI sàng lọc theo triệu chứng, xử lý dữ liệu và đưa ra gợi ý thông minh.',
+                  description: 'Ứng dụng thử nghiệm AI hỗ trợ sàng lọc theo triệu chứng và đưa ra gợi ý ban đầu.',
+                  role: 'Tôi xử lý dữ liệu đầu vào, xây dựng luồng nhập triệu chứng, hiển thị kết quả gợi ý và tìm hiểu cách ứng dụng AI vào phần mềm.',
                   tech: ['AI', 'Python', 'Data Processing', 'Machine Learning'],
                   github: 'https://github.com/doanhnguyen05/hethongsangloctheotrieuchung.git',
                   icon: Brain,
@@ -800,6 +806,10 @@ export default function App() {
                     <div className="p-6">
                       <h3 className="text-xl font-bold mb-2 group-hover:text-cyan-400 transition-colors">{project.title}</h3>
                       <p className="text-sm text-slate-400 mb-4 leading-relaxed">{project.description}</p>
+                      <div className="mb-4 rounded-xl bg-slate-900/60 border border-slate-700/50 p-3">
+                        <div className="text-xs font-semibold uppercase tracking-wide text-cyan-400 mb-1">Tôi đã làm</div>
+                        <p className="text-sm text-slate-300 leading-relaxed">{project.role}</p>
+                      </div>
                       <div className="flex flex-wrap gap-2 mb-4">
                         {project.tech.map((tech, i) => (
                           <span key={i} className="px-3 py-1 bg-slate-700/50 rounded-full text-xs border border-slate-600/50 hover:border-cyan-500/50 transition-colors">
@@ -842,7 +852,7 @@ export default function App() {
               </h2>
               <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-cyan-500 mx-auto mb-4"></div>
               <p className="text-center text-slate-400 mb-12 max-w-3xl mx-auto">
-                5 đề tài nghiên cứu về bảo mật, AI và hệ thống thông tin hiện đại
+                Các đề tài giúp tôi rèn luyện khả năng đọc tài liệu kỹ thuật, thử nghiệm công nghệ và trình bày kết quả theo hướng có thể ứng dụng.
               </p>
             </AnimatedSection>
 
@@ -851,6 +861,7 @@ export default function App() {
                 {
                   title: 'Nghiên cứu, thử nghiệm một số tính năng bảo mật trên hệ quản trị CSDL MariaDB và PostgreSQL',
                   description: 'Nghiên cứu các cơ chế bảo mật, phân quyền, xác thực và kiểm soát truy cập trên MariaDB và PostgreSQL.',
+                  contribution: 'Tôi tham gia tìm hiểu tài liệu, thử nghiệm cấu hình bảo mật, ghi nhận kết quả và hỗ trợ tổng hợp nội dung cho bài nghiên cứu.',
                   status: 'Đã xuất bản trên IEEE',
                   type: 'published',
                   link: 'https://ieeexplore.ieee.org/document/11473793',
@@ -861,6 +872,7 @@ export default function App() {
                 {
                   title: 'Nghiên cứu bảo mật trên Apache Spark và Elasticsearch',
                   description: 'Nghiên cứu các tính năng bảo mật trên nền tảng Apache Spark và Elasticsearch, ứng dụng trong hệ thống Web quản lý, lưu trữ và tìm kiếm tài liệu được mã hóa.',
+                  contribution: 'Tôi đang/từng thử nghiệm cách lưu trữ, tìm kiếm tài liệu và tìm hiểu các rủi ro liên quan đến dữ liệu được mã hóa.',
                   status: 'Đã hoàn thành',
                   type: 'completed',
                   icon: Search,
@@ -870,6 +882,7 @@ export default function App() {
                 {
                   title: 'Hệ thống quản lý thông điệp RabbitMQ kết hợp AI',
                   description: 'Nghiên cứu RabbitMQ và AI hiện đại để hỗ trợ tạo sinh, quản lý ngân hàng đề thi câu hỏi trắc nghiệm.',
+                  contribution: 'Tôi đang tìm hiểu luồng gửi/nhận thông điệp, cách tổ chức hàng đợi và cách AI có thể hỗ trợ tạo, phân loại câu hỏi.',
                   status: 'Đang thực hiện',
                   type: 'ongoing',
                   icon: MessageSquare,
@@ -879,6 +892,7 @@ export default function App() {
                 {
                   title: 'Hệ thống tư vấn tuyển sinh tích hợp AI và Security',
                   description: 'Đề tài cấp trường, hỗ trợ tư vấn tuyển sinh và chọn ngành/chuyên ngành cho Trường Đại học Điện lực.',
+                  contribution: 'Tôi đang hỗ trợ phân tích nhu cầu người dùng, luồng tư vấn, dữ liệu ngành học và các yêu cầu bảo mật cho hệ thống.',
                   status: 'Đề tài cấp trường - Đang thực hiện',
                   type: 'ongoing',
                   icon: Lightbulb,
@@ -888,6 +902,7 @@ export default function App() {
                 {
                   title: 'Hệ thống quản lý công văn ứng dụng OCR và chữ ký số',
                   description: 'Nghiên cứu OCR, chữ ký số và hệ thống thông tin hỗ trợ quản lý công văn đi và đến.',
+                  contribution: 'Tôi đang tìm hiểu cách nhận dạng nội dung văn bản, quản lý trạng thái công văn và tích hợp chữ ký số vào quy trình xử lý.',
                   status: 'Đang thực hiện',
                   type: 'ongoing',
                   icon: FileText,
@@ -912,6 +927,10 @@ export default function App() {
                         </span>
                       </div>
                       <p className="text-slate-400 text-sm mb-4 leading-relaxed">{research.description}</p>
+                      <div className="mb-4 rounded-xl bg-slate-900/60 border border-slate-700/50 p-3">
+                        <div className="text-xs font-semibold uppercase tracking-wide text-cyan-400 mb-1">Vai trò của tôi</div>
+                        <p className="text-sm text-slate-300 leading-relaxed">{research.contribution}</p>
+                      </div>
                       <div className="flex flex-wrap gap-2 mb-4">
                         {research.keywords.map((keyword, i) => (
                           <span key={i} className="px-2 py-1 bg-slate-700/50 rounded text-xs text-slate-300">
