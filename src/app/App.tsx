@@ -857,28 +857,28 @@ export default function App() {
         </section>
 
         {/* Research Section */}
-        <section id="research" className="py-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+        <section id="research" className="py-16 sm:py-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
           {/* Background Images - More visible */}
-          <div className="absolute -left-20 top-40 w-96 h-96 opacity-40 rounded-3xl overflow-hidden rotate-12 border-4 border-green-500/30">
+          <div className="hidden lg:block absolute -left-20 top-40 w-96 h-96 opacity-40 rounded-3xl overflow-hidden rotate-12 border-4 border-green-500/30">
             <img src={profileImage4} alt="" className="w-full h-full object-cover" />
           </div>
-          <div className="absolute -right-20 bottom-20 w-80 h-80 opacity-40 rounded-3xl overflow-hidden -rotate-12 border-4 border-red-500/30">
+          <div className="hidden lg:block absolute -right-20 bottom-20 w-80 h-80 opacity-40 rounded-3xl overflow-hidden -rotate-12 border-4 border-red-500/30">
             <img src={profileImage1} alt="" className="w-full h-full object-cover" />
           </div>
 
           <div className="max-w-7xl mx-auto relative">
             <AnimatedSection>
-              <h2 className="text-4xl sm:text-5xl font-bold text-center mb-4">
+              <h2 className="text-3xl sm:text-5xl font-bold text-center mb-4">
                 <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">Nghiên cứu khoa học</span>
               </h2>
               <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-cyan-500 mx-auto mb-4"></div>
-              <p className="text-center text-slate-400 mb-12 max-w-3xl mx-auto">
+              <p className="text-center text-sm sm:text-base text-slate-400 mb-8 sm:mb-12 max-w-3xl mx-auto leading-relaxed">
                 Các đề tài không chỉ dừng ở tìm hiểu lý thuyết. Tôi có tham gia xây dựng sản phẩm thử nghiệm, demo chức năng,
                 kiểm tra luồng xử lý và trình bày kết quả theo hướng có thể ứng dụng.
               </p>
             </AnimatedSection>
 
-            <div className="max-w-5xl mx-auto space-y-6">
+            <div className="max-w-5xl mx-auto space-y-4 sm:space-y-6">
               {[
                 {
                   title: 'Nghiên cứu, thử nghiệm một số tính năng bảo mật trên hệ quản trị CSDL MariaDB và PostgreSQL',
@@ -933,56 +933,56 @@ export default function App() {
                 },
               ].map((research, index) => (
                 <AnimatedSection key={index} delay={index * 100}>
-                  <div className="flex gap-6 items-start group">
-                    <div className={`p-4 rounded-2xl bg-gradient-to-r ${research.color} flex-shrink-0 group-hover:scale-110 transition-transform`}>
-                      <research.icon className="w-8 h-8 text-white" />
-                    </div>
-                    <div className="flex-1 bg-slate-800/50 backdrop-blur-sm rounded-2xl p-6 border border-slate-700/50 group-hover:border-cyan-500/50 transition-all">
-                      <div className="flex items-start justify-between gap-4 mb-3">
-                        <h3 className="text-lg font-bold flex-1">{research.title}</h3>
-                        <span className={`px-3 py-1 rounded-full text-xs font-bold whitespace-nowrap ${
+                  <div className="group bg-slate-800/50 backdrop-blur-sm rounded-2xl p-4 sm:p-6 border border-slate-700/50 group-hover:border-cyan-500/50 transition-all">
+                    <div className="flex flex-col sm:flex-row sm:items-start gap-3 sm:gap-4 mb-3">
+                      <div className="flex items-start gap-3 min-w-0 flex-1">
+                        <div className={`p-3 sm:p-4 rounded-2xl bg-gradient-to-r ${research.color} flex-shrink-0 group-hover:scale-110 transition-transform`}>
+                          <research.icon className="w-6 h-6 sm:w-8 sm:h-8 text-white" />
+                        </div>
+                        <h3 className="text-base sm:text-lg font-bold leading-snug break-words min-w-0">{research.title}</h3>
+                      </div>
+                      <span className={`w-fit px-3 py-1 rounded-full text-xs font-bold ${
                           research.type === 'published' ? 'bg-green-500/20 text-green-400' :
                           research.type === 'completed' ? 'bg-blue-500/20 text-blue-400' :
                           'bg-purple-500/20 text-purple-400'
                         }`}>
                           {research.status}
-                        </span>
-                      </div>
-                      <p className="text-slate-400 text-sm mb-4 leading-relaxed">{research.description}</p>
-                      <button
-                        type="button"
-                        onClick={() => setExpandedResearch((current) => ({ ...current, [index]: !current[index] }))}
-                        className="mb-4 flex w-full items-center justify-between rounded-xl bg-slate-900/60 border border-slate-700/50 px-3 py-2 text-left hover:border-cyan-500/50 transition-colors"
-                        aria-expanded={!!expandedResearch[index]}
-                      >
-                        <span className="text-xs font-semibold uppercase tracking-wide text-cyan-400">Vai trò của tôi</span>
-                        <ChevronRight className={`h-4 w-4 text-cyan-400 transition-transform ${expandedResearch[index] ? 'rotate-90' : ''}`} />
-                      </button>
-                      {expandedResearch[index] && (
-                        <div className="mb-4 rounded-xl bg-slate-900/60 border border-slate-700/50 p-3">
-                          <p className="text-sm text-slate-300 leading-relaxed">{research.contribution}</p>
-                        </div>
-                      )}
-                      <div className="flex flex-wrap gap-2 mb-4">
-                        {research.keywords.map((keyword, i) => (
-                          <span key={i} className="px-2 py-1 bg-slate-700/50 rounded text-xs text-slate-300">
-                            {keyword}
-                          </span>
-                        ))}
-                      </div>
-                      {research.link && (
-                        <a
-                          href={research.link}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors"
-                        >
-                          <Award className="w-4 h-4" />
-                          Xem bài nghiên cứu trên IEEE
-                          <ExternalLink className="w-4 h-4" />
-                        </a>
-                      )}
+                      </span>
                     </div>
+                    <p className="text-slate-400 text-sm mb-4 leading-relaxed">{research.description}</p>
+                    <button
+                      type="button"
+                      onClick={() => setExpandedResearch((current) => ({ ...current, [index]: !current[index] }))}
+                      className="mb-4 flex w-full items-center justify-between rounded-xl bg-slate-900/60 border border-slate-700/50 px-3 py-2 text-left hover:border-cyan-500/50 transition-colors"
+                      aria-expanded={!!expandedResearch[index]}
+                    >
+                      <span className="text-xs font-semibold uppercase tracking-wide text-cyan-400">Vai trò của tôi</span>
+                      <ChevronRight className={`h-4 w-4 text-cyan-400 transition-transform ${expandedResearch[index] ? 'rotate-90' : ''}`} />
+                    </button>
+                    {expandedResearch[index] && (
+                      <div className="mb-4 rounded-xl bg-slate-900/60 border border-slate-700/50 p-3">
+                        <p className="text-sm text-slate-300 leading-relaxed">{research.contribution}</p>
+                      </div>
+                    )}
+                    <div className="flex flex-wrap gap-2 mb-4">
+                      {research.keywords.map((keyword, i) => (
+                        <span key={i} className="px-2 py-1 bg-slate-700/50 rounded text-xs text-slate-300">
+                          {keyword}
+                        </span>
+                      ))}
+                    </div>
+                    {research.link && (
+                      <a
+                        href={research.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex max-w-full items-center gap-2 text-sm sm:text-base text-cyan-400 hover:text-cyan-300 transition-colors"
+                      >
+                        <Award className="w-4 h-4 flex-shrink-0" />
+                        <span className="break-words">Xem bài nghiên cứu trên IEEE</span>
+                        <ExternalLink className="w-4 h-4 flex-shrink-0" />
+                      </a>
+                    )}
                   </div>
                 </AnimatedSection>
               ))}
