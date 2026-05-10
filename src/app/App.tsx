@@ -55,6 +55,7 @@ import projectImage5 from '/src/imports/image-4.png';
 
 // Import logo
 import logo from '/src/imports/image-6.png';
+import epuLogo from '/src/imports/epu-logo.png';
 
 // Custom hook for scroll animations
 function useScrollAnimation() {
@@ -581,8 +582,12 @@ export default function App() {
               <div className="max-w-4xl mx-auto">
                 <div className="bg-slate-800/50 backdrop-blur-sm rounded-3xl p-8 border border-slate-700/50 hover:border-cyan-500/50 transition-all">
                   <div className="flex flex-col md:flex-row gap-6 items-start">
-                    <div className="p-6 bg-gradient-to-r from-blue-600 to-cyan-600 rounded-2xl flex-shrink-0">
-                      <GraduationCap className="w-16 h-16 text-white" />
+                    <div className="h-28 w-28 bg-white rounded-2xl p-3 flex-shrink-0 shadow-lg shadow-cyan-500/20 border border-cyan-500/30">
+                      <img
+                        src={epuLogo}
+                        alt="Logo Trường Đại học Điện lực"
+                        className="h-full w-full object-contain"
+                      />
                     </div>
                     <div className="flex-1">
                       <h3 className="text-3xl font-bold mb-2">Trường Đại học Điện lực</h3>

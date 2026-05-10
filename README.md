@@ -66,3 +66,7 @@ src/
 ```text
 https://github.com/doanhnguyen05/Profile-ca-nhan
 ```
+
+## Attribution
+
+- Logo Trường Đại học Điện lực: `EPUlogo.png` từ Wikimedia Commons, giấy phép CC BY-SA 3.0.
