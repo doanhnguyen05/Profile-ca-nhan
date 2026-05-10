@@ -110,6 +110,8 @@ export default function App() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('home');
   const [scrolled, setScrolled] = useState(false);
+  const [expandedProjects, setExpandedProjects] = useState<Record<number, boolean>>({});
+  const [expandedResearch, setExpandedResearch] = useState<Record<number, boolean>>({});
 
   useEffect(() => {
     const handleScroll = () => {
@@ -670,15 +672,15 @@ export default function App() {
                   category: 'Kỹ năng chính',
                   icon: Code,
                   color: 'from-blue-500 to-cyan-500',
-                  description: 'Nhóm kỹ năng tôi muốn phát triển thành hướng nghề nghiệp chính.',
-                  items: ['Web Development', 'HTML/CSS/JavaScript', 'React cơ bản', 'C#/.NET MVC', 'Java OOP', 'SQL & Database'],
+                  description: 'Nền tảng tôi sử dụng nhiều nhất trong các sản phẩm học phần và muốn tiếp tục phát triển khi đi thực tập.',
+                  items: ['Web Development', 'HTML/CSS/JavaScript', 'React cơ bản', 'ASP.NET MVC', 'C# WinForms', 'Java OOP', 'SQL Database'],
                 },
                 {
                   category: 'Kỹ năng bổ sung',
                   icon: Brain,
                   color: 'from-purple-500 to-pink-500',
-                  description: 'Các mảng tôi đã tiếp cận qua học phần và nghiên cứu, có thể hỗ trợ thêm cho dự án.',
-                  items: ['Mobile UI', 'API Integration', 'AI ứng dụng', 'OCR', 'Elasticsearch', 'RabbitMQ', 'Database Security'],
+                  description: 'Các mảng đã áp dụng ở mức sản phẩm demo hoặc nghiên cứu, giúp tôi hỗ trợ thêm ngoài phần lập trình chính.',
+                  items: ['Expo/WebView', 'API Integration', 'AI ứng dụng', 'OCR', 'Elasticsearch', 'RabbitMQ', 'Database Security'],
                 },
                 {
                   category: 'Kỹ năng mềm',
@@ -739,9 +741,9 @@ export default function App() {
               {[
                 {
                   title: 'Quản lý nhà trọ .NET',
-                  description: 'Dự án môn học mô phỏng quy trình quản lý nhà trọ: phòng, khách thuê, hợp đồng và hóa đơn.',
-                  role: 'Tôi xây dựng các màn hình quản lý chính, xử lý CRUD, kết nối SQL và kiểm thử các luồng thêm, sửa, xóa, tra cứu dữ liệu.',
-                  tech: ['C#', '.NET', 'MVC', 'SQL'],
+                  description: 'Ứng dụng WinForms quản lý nhà trọ theo nhiều vai trò: admin, quản lý và khách thuê.',
+                  role: 'Tôi xây dựng các module quản lý phòng, khách thuê, hợp đồng, hóa đơn, yêu cầu bảo trì; làm việc với mô hình DAL/BLL/UI, SQL Server, dashboard, gửi email và luồng thuê phòng online có QR VietQR.',
+                  tech: ['C#', '.NET', 'WinForms', 'SQL Server', 'VietQR'],
                   github: 'https://github.com/doanhnguyen05/Quanlynhatro.net.git',
                   icon: Server,
                   color: 'from-blue-500 to-cyan-500',
@@ -749,9 +751,9 @@ export default function App() {
                 },
                 {
                   title: 'Quản lý nhà trọ Java',
-                  description: 'Ứng dụng Java giúp luyện tư duy lập trình hướng đối tượng và xử lý dữ liệu quản lý nhà trọ.',
-                  role: 'Tôi thiết kế các lớp nghiệp vụ, viết chức năng quản lý phòng/khách thuê/hợp đồng và kết nối dữ liệu bằng JDBC.',
-                  tech: ['Java', 'OOP', 'JDBC'],
+                  description: 'Ứng dụng desktop JavaFX quản lý nhà trọ với PostgreSQL, Hibernate và phân quyền người dùng.',
+                  role: 'Tôi thiết kế entity, service, controller JavaFX và các luồng quản lý phòng, khách thuê, hợp đồng, hóa đơn, đặt phòng, dashboard báo cáo và nhật ký hệ thống.',
+                  tech: ['JavaFX', 'Java', 'Hibernate', 'PostgreSQL'],
                   github: 'https://github.com/doanhnguyen05/Quanlynhatrojava.git',
                   icon: Code,
                   color: 'from-purple-500 to-pink-500',
@@ -759,9 +761,9 @@ export default function App() {
                 },
                 {
                   title: 'Edu LMS Web',
-                  description: 'Website quản lý đào tạo trực tuyến phục vụ người học, giảng viên và quản trị viên.',
-                  role: 'Tôi tham gia phân tích chức năng, xây dựng giao diện, tổ chức dữ liệu khóa học và kiểm tra các luồng đăng nhập, học tập, quản lý nội dung.',
-                  tech: ['HTML', 'CSS', 'JavaScript', 'Backend', 'Database'],
+                  description: 'Hệ thống LMS ASP.NET MVC cho 3 vai trò: Admin, Instructor và Learner.',
+                  role: 'Tôi triển khai luồng quản lý khóa học, bài học, bài tập, tiến độ học, thanh toán QR VietQR/SePay, dashboard, báo cáo Excel và các test cho luồng đăng nhập, học tập, thanh toán.',
+                  tech: ['ASP.NET MVC', '.NET 8', 'MySQL', 'Identity', 'VietQR'],
                   github: 'https://github.com/doanhnguyen05/Edu_LMS.git',
                   icon: GraduationCap,
                   color: 'from-green-500 to-teal-500',
@@ -769,9 +771,9 @@ export default function App() {
                 },
                 {
                   title: 'Mobile EduLMS',
-                  description: 'Phiên bản mobile cho hệ thống học tập, tập trung vào trải nghiệm sử dụng trên thiết bị di động.',
-                  role: 'Tôi thiết kế luồng màn hình, xây dựng giao diện thân thiện, chuẩn bị dữ liệu hiển thị và kết nối các chức năng qua API.',
-                  tech: ['Mobile', 'UI/UX', 'API', 'User Experience'],
+                  description: 'Ứng dụng mobile học tập chạy bằng Expo, đóng gói giao diện web LMS vào WebView để mở bằng QR trên điện thoại.',
+                  role: 'Tôi tổ chức lại cấu trúc web app theo module, tách router/provider/entity/feature, chuẩn bị pipeline build Vite thành HTML nhúng và chạy trong Expo Go.',
+                  tech: ['Expo', 'React', 'WebView', 'Vite', 'TypeScript'],
                   github: 'https://github.com/doanhnguyen05/MobileEduLMS.git',
                   icon: Smartphone,
                   color: 'from-orange-500 to-red-500',
@@ -779,9 +781,9 @@ export default function App() {
                 },
                 {
                   title: 'Hệ thống sàng lọc AI',
-                  description: 'Ứng dụng thử nghiệm AI hỗ trợ sàng lọc theo triệu chứng và đưa ra gợi ý ban đầu.',
-                  role: 'Tôi xử lý dữ liệu đầu vào, xây dựng luồng nhập triệu chứng, hiển thị kết quả gợi ý và tìm hiểu cách ứng dụng AI vào phần mềm.',
-                  tech: ['AI', 'Python', 'Data Processing', 'Machine Learning'],
+                  description: 'Website Flask hỗ trợ sàng lọc bệnh theo triệu chứng, lưu lịch sử và giải thích kết quả gợi ý.',
+                  role: 'Tôi xây dựng luồng nhập triệu chứng, câu hỏi bổ sung, thuật toán suy luận rule-based có trọng số, lưu kết quả bằng SQLAlchemy và giao diện xem lịch sử sàng lọc.',
+                  tech: ['Python', 'Flask', 'SQLAlchemy', 'Rule-based AI'],
                   github: 'https://github.com/doanhnguyen05/hethongsangloctheotrieuchung.git',
                   icon: Brain,
                   color: 'from-indigo-500 to-blue-500',
@@ -806,10 +808,20 @@ export default function App() {
                     <div className="p-6">
                       <h3 className="text-xl font-bold mb-2 group-hover:text-cyan-400 transition-colors">{project.title}</h3>
                       <p className="text-sm text-slate-400 mb-4 leading-relaxed">{project.description}</p>
-                      <div className="mb-4 rounded-xl bg-slate-900/60 border border-slate-700/50 p-3">
-                        <div className="text-xs font-semibold uppercase tracking-wide text-cyan-400 mb-1">Tôi đã làm</div>
-                        <p className="text-sm text-slate-300 leading-relaxed">{project.role}</p>
-                      </div>
+                      <button
+                        type="button"
+                        onClick={() => setExpandedProjects((current) => ({ ...current, [index]: !current[index] }))}
+                        className="mb-4 flex w-full items-center justify-between rounded-xl bg-slate-900/60 border border-slate-700/50 px-3 py-2 text-left hover:border-cyan-500/50 transition-colors"
+                        aria-expanded={!!expandedProjects[index]}
+                      >
+                        <span className="text-xs font-semibold uppercase tracking-wide text-cyan-400">Tôi đã làm</span>
+                        <ChevronRight className={`h-4 w-4 text-cyan-400 transition-transform ${expandedProjects[index] ? 'rotate-90' : ''}`} />
+                      </button>
+                      {expandedProjects[index] && (
+                        <div className="mb-4 rounded-xl bg-slate-900/60 border border-slate-700/50 p-3">
+                          <p className="text-sm text-slate-300 leading-relaxed">{project.role}</p>
+                        </div>
+                      )}
                       <div className="flex flex-wrap gap-2 mb-4">
                         {project.tech.map((tech, i) => (
                           <span key={i} className="px-3 py-1 bg-slate-700/50 rounded-full text-xs border border-slate-600/50 hover:border-cyan-500/50 transition-colors">
@@ -852,7 +864,8 @@ export default function App() {
               </h2>
               <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-cyan-500 mx-auto mb-4"></div>
               <p className="text-center text-slate-400 mb-12 max-w-3xl mx-auto">
-                Các đề tài giúp tôi rèn luyện khả năng đọc tài liệu kỹ thuật, thử nghiệm công nghệ và trình bày kết quả theo hướng có thể ứng dụng.
+                Các đề tài không chỉ dừng ở tìm hiểu lý thuyết. Tôi có tham gia xây dựng sản phẩm thử nghiệm, demo chức năng,
+                kiểm tra luồng xử lý và trình bày kết quả theo hướng có thể ứng dụng.
               </p>
             </AnimatedSection>
 
@@ -860,8 +873,9 @@ export default function App() {
               {[
                 {
                   title: 'Nghiên cứu, thử nghiệm một số tính năng bảo mật trên hệ quản trị CSDL MariaDB và PostgreSQL',
-                  description: 'Nghiên cứu các cơ chế bảo mật, phân quyền, xác thực và kiểm soát truy cập trên MariaDB và PostgreSQL.',
-                  contribution: 'Tôi tham gia tìm hiểu tài liệu, thử nghiệm cấu hình bảo mật, ghi nhận kết quả và hỗ trợ tổng hợp nội dung cho bài nghiên cứu.',
+                  description: 'Đề tài có sản phẩm thử nghiệm các cơ chế bảo mật, phân quyền, xác thực và kiểm soát truy cập trên MariaDB/PostgreSQL.',
+                  product: 'Bộ kịch bản thử nghiệm và cấu hình minh họa cho các tính năng bảo mật database.',
+                  contribution: 'Tôi tham gia tìm hiểu tài liệu, dựng môi trường thử nghiệm, chạy các case kiểm tra phân quyền/truy cập, ghi nhận kết quả và hỗ trợ tổng hợp nội dung cho bài nghiên cứu.',
                   status: 'Đã xuất bản trên IEEE',
                   type: 'published',
                   link: 'https://ieeexplore.ieee.org/document/11473793',
@@ -871,8 +885,9 @@ export default function App() {
                 },
                 {
                   title: 'Nghiên cứu bảo mật trên Apache Spark và Elasticsearch',
-                  description: 'Nghiên cứu các tính năng bảo mật trên nền tảng Apache Spark và Elasticsearch, ứng dụng trong hệ thống Web quản lý, lưu trữ và tìm kiếm tài liệu được mã hóa.',
-                  contribution: 'Tôi đang/từng thử nghiệm cách lưu trữ, tìm kiếm tài liệu và tìm hiểu các rủi ro liên quan đến dữ liệu được mã hóa.',
+                  description: 'Đề tài hướng đến sản phẩm Web quản lý, lưu trữ và tìm kiếm tài liệu được mã hóa bằng Apache Spark và Elasticsearch.',
+                  product: 'Demo hệ thống tìm kiếm tài liệu, xử lý dữ liệu và kiểm tra các yêu cầu bảo mật khi lưu trữ/tìm kiếm.',
+                  contribution: 'Tôi thử nghiệm cách lưu trữ, tìm kiếm tài liệu, xử lý dữ liệu và tìm hiểu các rủi ro liên quan đến dữ liệu được mã hóa.',
                   status: 'Đã hoàn thành',
                   type: 'completed',
                   icon: Search,
@@ -881,7 +896,8 @@ export default function App() {
                 },
                 {
                   title: 'Hệ thống quản lý thông điệp RabbitMQ kết hợp AI',
-                  description: 'Nghiên cứu RabbitMQ và AI hiện đại để hỗ trợ tạo sinh, quản lý ngân hàng đề thi câu hỏi trắc nghiệm.',
+                  description: 'Sản phẩm đang nghiên cứu dùng RabbitMQ và AI để hỗ trợ tạo sinh, quản lý ngân hàng câu hỏi trắc nghiệm.',
+                  product: 'Prototype luồng gửi/nhận thông điệp, xử lý hàng đợi và hỗ trợ tạo/phân loại câu hỏi bằng AI.',
                   contribution: 'Tôi đang tìm hiểu luồng gửi/nhận thông điệp, cách tổ chức hàng đợi và cách AI có thể hỗ trợ tạo, phân loại câu hỏi.',
                   status: 'Đang thực hiện',
                   type: 'ongoing',
@@ -891,7 +907,8 @@ export default function App() {
                 },
                 {
                   title: 'Hệ thống tư vấn tuyển sinh tích hợp AI và Security',
-                  description: 'Đề tài cấp trường, hỗ trợ tư vấn tuyển sinh và chọn ngành/chuyên ngành cho Trường Đại học Điện lực.',
+                  description: 'Đề tài cấp trường phát triển sản phẩm tư vấn tuyển sinh, chọn ngành/chuyên ngành cho Trường Đại học Điện lực.',
+                  product: 'Demo hệ thống tư vấn tích hợp AI, dữ liệu ngành học và các yêu cầu bảo mật cho người dùng.',
                   contribution: 'Tôi đang hỗ trợ phân tích nhu cầu người dùng, luồng tư vấn, dữ liệu ngành học và các yêu cầu bảo mật cho hệ thống.',
                   status: 'Đề tài cấp trường - Đang thực hiện',
                   type: 'ongoing',
@@ -901,7 +918,8 @@ export default function App() {
                 },
                 {
                   title: 'Hệ thống quản lý công văn ứng dụng OCR và chữ ký số',
-                  description: 'Nghiên cứu OCR, chữ ký số và hệ thống thông tin hỗ trợ quản lý công văn đi và đến.',
+                  description: 'Sản phẩm đang nghiên cứu hỗ trợ quản lý công văn đi/đến bằng OCR, chữ ký số và quy trình xử lý điện tử.',
+                  product: 'Prototype quản lý công văn, nhận dạng nội dung văn bản và tích hợp xác thực/chữ ký số.',
                   contribution: 'Tôi đang tìm hiểu cách nhận dạng nội dung văn bản, quản lý trạng thái công văn và tích hợp chữ ký số vào quy trình xử lý.',
                   status: 'Đang thực hiện',
                   type: 'ongoing',
@@ -928,9 +946,23 @@ export default function App() {
                       </div>
                       <p className="text-slate-400 text-sm mb-4 leading-relaxed">{research.description}</p>
                       <div className="mb-4 rounded-xl bg-slate-900/60 border border-slate-700/50 p-3">
-                        <div className="text-xs font-semibold uppercase tracking-wide text-cyan-400 mb-1">Vai trò của tôi</div>
-                        <p className="text-sm text-slate-300 leading-relaxed">{research.contribution}</p>
+                        <div className="text-xs font-semibold uppercase tracking-wide text-cyan-400 mb-1">Sản phẩm / demo</div>
+                        <p className="text-sm text-slate-300 leading-relaxed">{research.product}</p>
                       </div>
+                      <button
+                        type="button"
+                        onClick={() => setExpandedResearch((current) => ({ ...current, [index]: !current[index] }))}
+                        className="mb-4 flex w-full items-center justify-between rounded-xl bg-slate-900/60 border border-slate-700/50 px-3 py-2 text-left hover:border-cyan-500/50 transition-colors"
+                        aria-expanded={!!expandedResearch[index]}
+                      >
+                        <span className="text-xs font-semibold uppercase tracking-wide text-cyan-400">Vai trò của tôi</span>
+                        <ChevronRight className={`h-4 w-4 text-cyan-400 transition-transform ${expandedResearch[index] ? 'rotate-90' : ''}`} />
+                      </button>
+                      {expandedResearch[index] && (
+                        <div className="mb-4 rounded-xl bg-slate-900/60 border border-slate-700/50 p-3">
+                          <p className="text-sm text-slate-300 leading-relaxed">{research.contribution}</p>
+                        </div>
+                      )}
                       <div className="flex flex-wrap gap-2 mb-4">
                         {research.keywords.map((keyword, i) => (
                           <span key={i} className="px-2 py-1 bg-slate-700/50 rounded text-xs text-slate-300">
