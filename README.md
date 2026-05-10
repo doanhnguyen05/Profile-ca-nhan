@@ -1,19 +1,19 @@
 # Portfolio cá nhân - Nguyễn Viết Doanh
 
-Website portfolio giới thiệu thông tin cá nhân, định hướng nghề nghiệp, kỹ năng, dự án học tập, hoạt động nghiên cứu và thông tin liên hệ của Nguyễn Viết Doanh.
+Website portfolio giới thiệu thông tin cá nhân, định hướng Dev Mobile, kỹ năng, dự án học tập, nghiên cứu khoa học và thông tin liên hệ của Nguyễn Viết Doanh.
 
 ## Giới thiệu
 
-Tôi là Nguyễn Viết Doanh, sinh viên năm 3 Trường Đại học Điện lực, đang tìm cơ hội thực tập hoặc vị trí fresher trong lĩnh vực phát triển phần mềm. Tôi tập trung vào Web Development, Backend cơ bản, cơ sở dữ liệu và có quan tâm đến AI ứng dụng, bảo mật dữ liệu.
+Tôi là Nguyễn Viết Doanh, sinh viên năm 3 Trường Đại học Điện lực, GPA 3.39, định hướng phát triển trong lĩnh vực Web, Mobile, AI và bảo mật hệ thống. Tôi đang tập trung theo hướng Dev Mobile, đồng thời rèn luyện nền tảng Web, cơ sở dữ liệu, AI ứng dụng và bảo mật dữ liệu.
 
 Portfolio này được xây dựng để HR và nhà tuyển dụng có thể nắm nhanh hồ sơ cá nhân, kỹ năng, dự án môn học, sản phẩm nghiên cứu và cách tôi tham gia vào từng hạng mục công việc.
 
 ## Điểm nổi bật
 
-- Có kinh nghiệm làm các sản phẩm môn học về quản lý nhà trọ, hệ thống học trực tuyến, ứng dụng mobile và AI.
-- Từng tham gia nghiên cứu có sản phẩm/demo về bảo mật cơ sở dữ liệu, Apache Spark, Elasticsearch, RabbitMQ, OCR, chữ ký số và hệ thống tư vấn tích hợp AI.
-- Có thể hỗ trợ nhiều phần việc trong nhóm: phân tích chức năng, thiết kế giao diện, xử lý CRUD, kết nối database, viết tài liệu và demo sản phẩm.
-- Tài lẻ: thiết kế giao diện, làm slide, trình bày demo, viết tài liệu mô tả sản phẩm.
+- Có kinh nghiệm làm các sản phẩm môn học về quản lý nhà trọ, hệ thống học trực tuyến, ứng dụng Mobile EduLMS và hệ thống sàng lọc theo triệu chứng.
+- Từng tham gia nghiên cứu có sản phẩm thử nghiệm về bảo mật cơ sở dữ liệu, Apache Spark, Elasticsearch, RabbitMQ, OCR, chữ ký số và hệ thống tư vấn tích hợp AI.
+- Có thể hỗ trợ nhiều phần việc trong nhóm: phân tích yêu cầu, thiết kế giao diện, xử lý CRUD, kết nối database, viết báo cáo và demo sản phẩm.
+- Kỹ năng mềm: thích nghi nhanh, lắng nghe góp ý, học hỏi công nghệ mới, thuyết trình, viết báo cáo, kiên trì và làm việc nhóm.
 
 ## Công nghệ sử dụng
 
@@ -65,9 +65,9 @@ src/
 ## Nội dung nổi bật
 
 - Giới thiệu bản thân và mục tiêu nghề nghiệp
-- Kỹ năng chính, kỹ năng bổ sung và kỹ năng mềm
-- Dự án học tập kèm mô tả vai trò đã thực hiện, ẩn/hiện khi người xem cần đọc sâu hơn
-- Các đề tài nghiên cứu kèm sản phẩm/demo, trạng thái và phần việc đang tham gia
+- Kỹ năng chính, kỹ năng bổ sung, kỹ năng mềm và tiếng Anh sơ cấp
+- Dự án học tập theo timeline trong CV, kèm mô tả vai trò đã thực hiện
+- Các đề tài nghiên cứu kèm sản phẩm thử nghiệm, trạng thái và phần việc đang tham gia
 - Thông tin liên hệ và liên kết mạng xã hội
 
 ## Repository

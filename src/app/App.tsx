@@ -319,13 +319,13 @@ export default function App() {
                       sequence={[
                         'Sinh viên Công nghệ thông tin',
                         2000,
-                        'Định hướng Web Developer',
+                        'Định hướng Dev Mobile',
                         2000,
-                        'Có nền tảng Mobile & Backend',
+                        'Web, Mobile, AI',
                         2000,
-                        'Quan tâm AI ứng dụng',
+                        'Database & Security',
                         2000,
-                        'Tham gia nghiên cứu bảo mật',
+                        'Học hỏi công nghệ mới',
                         2000,
                       ]}
                       wrapper="span"
@@ -335,9 +335,9 @@ export default function App() {
                   </div>
 
                   <p className="text-lg text-slate-400 leading-relaxed max-w-2xl">
-                    Sinh viên năm 3 Trường Đại học Điện lực, GPA 3.39. Tôi tập trung xây dựng nền tảng lập trình Web,
-                    Backend và Mobile, đồng thời tham gia các đề tài nghiên cứu về AI, dữ liệu và bảo mật để hiểu cách phần mềm
-                    được ứng dụng trong bài toán thực tế.
+                    Sinh viên năm 3 Trường Đại học Điện lực, GPA 3.39, định hướng phát triển trong lĩnh vực lập trình Web,
+                    Mobile, AI và bảo mật hệ thống. Tôi đã thực hiện nhiều dự án học phần và tham gia nghiên cứu khoa học
+                    liên quan đến hệ thống thông tin, dữ liệu và bảo mật.
                   </p>
 
                   {/* Stats */}
@@ -345,7 +345,7 @@ export default function App() {
                     {[
                       { value: '3.39', label: 'GPA' },
                       { value: '5+', label: 'Dự án' },
-                      { value: '5', label: 'Nghiên cứu' },
+                      { value: 'IEEE', label: 'Công bố' },
                     ].map((stat, index) => (
                       <div key={index} className="text-center p-4 bg-slate-800/50 rounded-xl border border-slate-700/50 hover:border-cyan-500/50 transition-all" style={{ animation: `fadeInUp 1s ease-out ${index * 0.2 + 0.5}s both` }}>
                         <div className="text-3xl font-bold bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">
@@ -443,28 +443,28 @@ export default function App() {
                   <div className="space-y-4 text-slate-300 leading-relaxed">
                     <p className="text-lg">
                       Tôi là <span className="font-semibold text-cyan-400">Nguyễn Viết Doanh</span>, sinh viên năm 3 Trường Đại học Điện lực,
-                      đang tìm cơ hội thực tập hoặc vị trí fresher để được làm việc trong môi trường phát triển phần mềm thực tế.
+                      GPA 3.39, định hướng phát triển trong lĩnh vực lập trình Web, Mobile, AI và bảo mật hệ thống.
                     </p>
                     <p>
-                      Trong các dự án môn học, tôi thường đảm nhận việc phân tích chức năng, thiết kế giao diện, xây dựng luồng xử lý,
-                      kết nối cơ sở dữ liệu và kiểm thử các thao tác chính. Tôi ưu tiên cách làm rõ ràng, dễ bảo trì và dễ bàn giao cho nhóm.
+                      Trong quá trình học tập, tôi đã thực hiện nhiều dự án học phần như hệ thống quản lý nhà trọ bằng .NET và Java,
+                      Edu LMS, Mobile EduLMS và hệ thống sàng lọc theo triệu chứng. Các dự án giúp tôi rèn luyện kỹ năng phân tích yêu cầu,
+                      thiết kế giao diện, xây dựng chức năng, xử lý dữ liệu và viết báo cáo.
                     </p>
                     <p>
-                      Bên cạnh học phần chuyên ngành, tôi tham gia các đề tài nghiên cứu về bảo mật cơ sở dữ liệu, tìm kiếm dữ liệu,
-                      hàng đợi thông điệp, AI, OCR và chữ ký số. Các đề tài này giúp tôi hiểu thêm về cách thu thập yêu cầu,
-                      đọc tài liệu kỹ thuật, thử nghiệm giải pháp và trình bày kết quả.
+                      Bên cạnh đó, tôi đã tham gia và đang thực hiện các đề tài nghiên cứu khoa học liên quan đến bảo mật cơ sở dữ liệu,
+                      Apache Spark, Elasticsearch, RabbitMQ, AI, OCR, chữ ký số và hệ thống thông tin hỗ trợ giáo dục.
                     </p>
                     <p>
-                      Điểm mạnh của tôi là tinh thần chủ động, chịu khó học công nghệ mới và có thể chuyển đổi linh hoạt giữa các phần việc
-                      như frontend, backend cơ bản, database, tài liệu kỹ thuật và demo sản phẩm.
+                      Tôi có tinh thần tự học, khả năng nghiên cứu, tư duy phân tích hệ thống và mong muốn phát triển thành lập trình viên
+                      có khả năng làm việc trên Web, Mobile và tích hợp AI.
                     </p>
                   </div>
 
                   <div className="grid sm:grid-cols-3 gap-4">
                     {[
-                      { title: 'Điểm mạnh', value: 'Chủ động học, bám việc đến khi có kết quả' },
-                      { title: 'Tài lẻ', value: 'Thiết kế giao diện, làm slide, viết tài liệu và demo sản phẩm' },
-                      { title: 'Phù hợp', value: 'Web intern, fresher developer, AI/data assistant' },
+                      { title: 'Định hướng', value: 'Dev Mobile, Web, AI và hệ thống thông tin' },
+                      { title: 'Điểm mạnh', value: 'Tự học, nghiên cứu, phân tích hệ thống và viết báo cáo' },
+                      { title: 'Phù hợp', value: 'Mobile intern, web intern, fresher developer' },
                     ].map((item) => (
                       <div key={item.title} className="bg-slate-800/50 rounded-xl p-4 border border-slate-700/50">
                         <div className="text-sm font-semibold text-cyan-400 mb-2">{item.title}</div>
@@ -532,28 +532,28 @@ export default function App() {
                 {
                   title: 'Hiện tại',
                   subtitle: 'Sinh viên IT',
-                  description: 'Đang theo học tại Trường Đại học Điện lực, xây dựng nền tảng vững chắc về phát triển phần mềm, công nghệ web, nền tảng mobile và ứng dụng AI.',
+                  description: 'Đang theo học ngành Công nghệ phần mềm tại Trường Đại học Điện lực, tập trung phát triển Web, Mobile, cơ sở dữ liệu, AI và bảo mật.',
                   icon: GraduationCap,
                   color: 'from-blue-500 to-cyan-500',
                 },
                 {
                   title: 'Mục tiêu ngắn hạn',
-                  subtitle: 'Nền tảng Web & Backend',
-                  description: 'Hoàn thiện nền tảng chuyên môn về lập trình Web, Mobile, cơ sở dữ liệu, API, phân tích thiết kế hệ thống và ứng dụng AI vào phần mềm. Tham gia các dự án thực tế để rèn luyện kỹ năng.',
+                  subtitle: 'Thực tập / Fresher',
+                  description: 'Tìm cơ hội thực tập để rèn luyện quy trình làm sản phẩm thực tế, cải thiện kỹ năng lập trình, làm việc nhóm và giao tiếp trong dự án.',
                   icon: Code,
                   color: 'from-purple-500 to-pink-500',
                 },
                 {
                   title: 'Mục tiêu tương lai gần',
                   subtitle: 'Mobile Developer',
-                  description: 'Chuyển dần sang lĩnh vực Mobile Development, phát triển ứng dụng di động với giao diện thân thiện, hiệu năng tốt. Kết hợp kiến thức Web, Mobile và AI để xây dựng các ứng dụng thông minh.',
+                  description: 'Phát triển theo hướng Mobile Development, xây dựng ứng dụng có giao diện thân thiện, luồng sử dụng rõ ràng và có khả năng kết nối API/backend.',
                   icon: Smartphone,
                   color: 'from-green-500 to-teal-500',
                 },
                 {
                   title: 'Mục tiêu dài hạn',
                   subtitle: 'Senior Full Stack Developer',
-                  description: 'Trở thành Senior Full Stack Developer có khả năng phát triển toàn diện trên nhiều nền tảng: Web, Mobile và AI. Thiết kế kiến trúc phần mềm, xây dựng hệ thống backend ổn định và áp dụng giải pháp bảo mật hiện đại.',
+                  description: 'Phát triển thành lập trình viên Full Stack có thể tham gia xây dựng hệ thống Web, Mobile và tích hợp AI vào sản phẩm thực tế.',
                   icon: Rocket,
                   color: 'from-orange-500 to-red-500',
                 },
@@ -610,12 +610,13 @@ export default function App() {
                       <h3 className="text-3xl font-bold mb-2">Trường Đại học Điện lực</h3>
                       <p className="text-lg text-slate-400 mb-4">Electric Power University</p>
                       <div className="flex flex-wrap gap-3 mb-4">
-                        <span className="px-4 py-2 bg-blue-600 rounded-full text-sm font-medium">Công nghệ thông tin</span>
+                        <span className="px-4 py-2 bg-blue-600 rounded-full text-sm font-medium">Cử nhân - Công nghệ phần mềm</span>
                         <span className="px-4 py-2 bg-purple-600 rounded-full text-sm font-medium">Sinh viên năm 3</span>
+                        <span className="px-4 py-2 bg-cyan-600 rounded-full text-sm font-medium">09/2023 - Hiện tại</span>
                         <span className="px-4 py-2 bg-green-600 rounded-full text-sm font-medium">GPA: 3.39</span>
                       </div>
                       <p className="text-slate-300 mb-6">
-                        <span className="font-semibold text-cyan-400">Định hướng:</span> Phát triển phần mềm, Web, Mobile, AI, Database, Security
+                        <span className="font-semibold text-cyan-400">Tập trung:</span> Web, Mobile, cơ sở dữ liệu, AI và bảo mật. Đã thực hiện các dự án môn học .NET, Java, Edu LMS, Mobile EduLMS và hệ thống sàng lọc triệu chứng.
                       </p>
                       <div>
                         <h4 className="font-bold text-lg mb-3">Các môn học nổi bật</h4>
@@ -672,22 +673,22 @@ export default function App() {
                   category: 'Kỹ năng chính',
                   icon: Code,
                   color: 'from-blue-500 to-cyan-500',
-                  description: 'Nền tảng tôi sử dụng nhiều nhất trong các sản phẩm học phần và muốn tiếp tục phát triển khi đi thực tập.',
-                  items: ['Web Development', 'HTML/CSS/JavaScript', 'React cơ bản', 'ASP.NET MVC', 'C# WinForms', 'Java OOP', 'SQL Database'],
+                  description: 'Các kỹ năng đã sử dụng trong dự án học phần và đang tiếp tục củng cố.',
+                  items: ['.NET Core (1 năm)', 'CSS (1 năm)', 'Git/GitHub (1 năm)', 'HTML5 (1 năm)', 'JavaScript (1 năm)', 'MySQL (1 năm)', 'UI-UX (1 năm)'],
                 },
                 {
                   category: 'Kỹ năng bổ sung',
                   icon: Brain,
                   color: 'from-purple-500 to-pink-500',
-                  description: 'Các mảng đã áp dụng ở mức sản phẩm demo hoặc nghiên cứu, giúp tôi hỗ trợ thêm ngoài phần lập trình chính.',
-                  items: ['Expo/WebView', 'API Integration', 'AI ứng dụng', 'OCR', 'Elasticsearch', 'RabbitMQ', 'Database Security'],
+                  description: 'Các công nghệ tôi đã tiếp cận qua dự án, nghiên cứu và sản phẩm demo.',
+                  items: ['Artificial Intelligence (< 1 năm)', 'ElasticSearch (< 1 năm)', 'Java (< 1 năm)', 'Mobile Development (< 1 năm)', 'PostgreSQL (< 1 năm)', 'RabbitMQ (< 1 năm)', 'REST API (< 1 năm)'],
                 },
                 {
-                  category: 'Kỹ năng mềm',
+                  category: 'Kỹ năng mềm & ngoại ngữ',
                   icon: Users,
                   color: 'from-green-500 to-teal-500',
-                  description: 'Những năng lực giúp tôi phối hợp tốt hơn khi làm việc nhóm và báo cáo tiến độ.',
-                  items: ['Tự học nhanh', 'Làm việc nhóm', 'Viết tài liệu', 'Trình bày demo', 'Phân tích yêu cầu', 'Kiên trì xử lý lỗi'],
+                  description: 'Những kỹ năng hỗ trợ quá trình học tập, nghiên cứu và làm việc nhóm.',
+                  items: ['Thích nghi nhanh', 'Lắng nghe và tiếp thu góp ý', 'Học hỏi công nghệ mới', 'Thuyết trình', 'Viết báo cáo', 'Kiên trì', 'Làm việc nhóm', 'Tiếng Anh sơ cấp'],
                 },
               ].map((skill, index) => (
                 <AnimatedSection key={index} delay={index * 100}>
@@ -740,54 +741,59 @@ export default function App() {
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {[
                 {
-                  title: 'Quản lý nhà trọ .NET',
-                  description: 'Ứng dụng WinForms quản lý nhà trọ theo nhiều vai trò: admin, quản lý và khách thuê.',
-                  role: 'Tôi xây dựng các module quản lý phòng, khách thuê, hợp đồng, hóa đơn, yêu cầu bảo trì; làm việc với mô hình DAL/BLL/UI, SQL Server, dashboard, gửi email và luồng thuê phòng online có QR VietQR.',
-                  tech: ['C#', '.NET', 'WinForms', 'SQL Server', 'VietQR'],
-                  github: 'https://github.com/doanhnguyen05/Quanlynhatro.net.git',
-                  icon: Server,
-                  color: 'from-blue-500 to-cyan-500',
-                  image: projectImage1,
+                  period: '03/2026 - 05/2026',
+                  title: 'Hệ thống sàng lọc AI',
+                  description: 'Hệ thống hỗ trợ sàng lọc theo triệu chứng, ứng dụng kiến thức AI để xử lý dữ liệu đầu vào và đưa ra kết quả gợi ý phù hợp.',
+                  role: 'Tôi phân tích bài toán sàng lọc dựa trên triệu chứng, xây dựng chức năng nhập thông tin triệu chứng, xử lý dữ liệu đầu vào, hiển thị kết quả gợi ý và viết báo cáo mô tả bài toán, phương pháp xử lý, kết quả thực hiện.',
+                  tech: ['Artificial Intelligence', 'Data Processing', 'Logic Reasoning', 'Python/AI Basic'],
+                  github: 'https://github.com/doanhnguyen05/hethongsangloctheotrieuchung.git',
+                  icon: Brain,
+                  color: 'from-indigo-500 to-blue-500',
+                  image: projectImage5,
                 },
                 {
-                  title: 'Quản lý nhà trọ Java',
-                  description: 'Ứng dụng desktop JavaFX quản lý nhà trọ với PostgreSQL, Hibernate và phân quyền người dùng.',
-                  role: 'Tôi thiết kế entity, service, controller JavaFX và các luồng quản lý phòng, khách thuê, hợp đồng, hóa đơn, đặt phòng, dashboard báo cáo và nhật ký hệ thống.',
-                  tech: ['JavaFX', 'Java', 'Hibernate', 'PostgreSQL'],
-                  github: 'https://github.com/doanhnguyen05/Quanlynhatrojava.git',
-                  icon: Code,
-                  color: 'from-purple-500 to-pink-500',
-                  image: projectImage2,
-                },
-                {
-                  title: 'Edu LMS Web',
-                  description: 'Hệ thống LMS ASP.NET MVC cho 3 vai trò: Admin, Instructor và Learner.',
-                  role: 'Tôi triển khai luồng quản lý khóa học, bài học, bài tập, tiến độ học, thanh toán QR VietQR/SePay, dashboard, báo cáo Excel và các test cho luồng đăng nhập, học tập, thanh toán.',
-                  tech: ['ASP.NET MVC', '.NET 8', 'MySQL', 'Identity', 'VietQR'],
-                  github: 'https://github.com/doanhnguyen05/Edu_LMS.git',
-                  icon: GraduationCap,
-                  color: 'from-green-500 to-teal-500',
-                  image: projectImage3,
-                },
-                {
+                  period: '02/2026 - 05/2026',
                   title: 'Mobile EduLMS',
-                  description: 'Ứng dụng mobile học tập chạy bằng Expo, đóng gói giao diện web LMS vào WebView để mở bằng QR trên điện thoại.',
-                  role: 'Tôi tổ chức lại cấu trúc web app theo module, tách router/provider/entity/feature, chuẩn bị pipeline build Vite thành HTML nhúng và chạy trong Expo Go.',
-                  tech: ['Expo', 'React', 'WebView', 'Vite', 'TypeScript'],
+                  description: 'Ứng dụng di động hỗ trợ người học truy cập nội dung học tập, xem danh sách khóa học, theo dõi thông tin khóa học và sử dụng các chức năng cơ bản của hệ thống học tập trực tuyến.',
+                  role: 'Tôi thiết kế giao diện mobile thân thiện, xây dựng các màn hình đăng nhập, danh sách khóa học, chi tiết khóa học và nội dung học tập; phân tích luồng điều hướng giữa các màn hình và tìm hiểu cách xử lý dữ liệu người dùng, tích hợp với backend.',
+                  tech: ['Mobile Development', 'Mobile UI', 'App Screen Flow', 'API Integration', 'User Experience'],
                   github: 'https://github.com/doanhnguyen05/MobileEduLMS.git',
                   icon: Smartphone,
                   color: 'from-orange-500 to-red-500',
                   image: projectImage4,
                 },
                 {
-                  title: 'Hệ thống sàng lọc AI',
-                  description: 'Website Flask hỗ trợ sàng lọc bệnh theo triệu chứng, lưu lịch sử và giải thích kết quả gợi ý.',
-                  role: 'Tôi xây dựng luồng nhập triệu chứng, câu hỏi bổ sung, thuật toán suy luận rule-based có trọng số, lưu kết quả bằng SQLAlchemy và giao diện xem lịch sử sàng lọc.',
-                  tech: ['Python', 'Flask', 'SQLAlchemy', 'Rule-based AI'],
-                  github: 'https://github.com/doanhnguyen05/hethongsangloctheotrieuchung.git',
-                  icon: Brain,
-                  color: 'from-indigo-500 to-blue-500',
-                  image: projectImage5,
+                  period: '01/2026 - 04/2026',
+                  title: 'Edu LMS Web',
+                  description: 'Hệ thống Web hỗ trợ quản lý đào tạo trực tuyến cho quản trị viên, giảng viên và người học.',
+                  role: 'Tôi phân tích yêu cầu và nghiệp vụ hệ thống học tập trực tuyến, thiết kế chức năng cho Admin, Instructor và Learner, xây dựng giao diện và chức năng quản lý khóa học, bài học, người dùng, thiết kế cơ sở dữ liệu và áp dụng phân quyền theo vai trò.',
+                  tech: ['HTML', 'CSS', 'JavaScript', 'Backend', 'Database', 'MVC', 'Role-based Access Control'],
+                  github: 'https://github.com/doanhnguyen05/Edu_LMS.git',
+                  icon: GraduationCap,
+                  color: 'from-green-500 to-teal-500',
+                  image: projectImage3,
+                },
+                {
+                  period: '09/2025 - 12/2025',
+                  title: 'Quản lý nhà trọ Java',
+                  description: 'Hệ thống quản lý nhà trọ sử dụng Java, tập trung vào lập trình hướng đối tượng, quản lý dữ liệu và xử lý các chức năng nghiệp vụ cơ bản.',
+                  role: 'Tôi áp dụng lập trình hướng đối tượng để xây dựng các lớp xử lý dữ liệu, xây dựng chức năng quản lý phòng trọ, khách thuê, hợp đồng và hóa đơn; kết nối cơ sở dữ liệu, thao tác CRUD, tổ chức cấu trúc chương trình theo nhóm chức năng, kiểm tra lỗi và hoàn thiện chức năng.',
+                  tech: ['Java', 'JavaFX', 'OOP', 'JDBC', 'SQL', 'Database', 'CRUD'],
+                  github: 'https://github.com/doanhnguyen05/Quanlynhatrojava.git',
+                  icon: Code,
+                  color: 'from-purple-500 to-pink-500',
+                  image: projectImage2,
+                },
+                {
+                  period: '09/2025 - 12/2025',
+                  title: 'Quản lý nhà trọ .NET',
+                  description: 'Hệ thống quản lý nhà trọ bằng .NET, hỗ trợ quản lý phòng trọ, khách thuê, hợp đồng, hóa đơn và các nghiệp vụ cơ bản trong vận hành nhà trọ.',
+                  role: 'Tôi phân tích nghiệp vụ quản lý nhà trọ, thiết kế cơ sở dữ liệu cho phòng trọ, khách thuê, hợp đồng và hóa đơn; xây dựng chức năng thêm, sửa, xóa, tìm kiếm, hiển thị dữ liệu và xử lý logic nghiệp vụ trong quá trình quản lý thông tin.',
+                  tech: ['C#', '.NET', 'MVC', 'SQL', 'Database Design', 'CRUD'],
+                  github: 'https://github.com/doanhnguyen05/Quanlynhatro.net.git',
+                  icon: Server,
+                  color: 'from-blue-500 to-cyan-500',
+                  image: projectImage1,
                 },
               ].map((project, index) => (
                 <AnimatedSection key={index} delay={index * 100}>
@@ -806,6 +812,9 @@ export default function App() {
                     </div>
 
                     <div className="p-6">
+                      <div className="mb-2 inline-flex items-center rounded-full bg-cyan-500/10 px-3 py-1 text-xs font-semibold text-cyan-300 border border-cyan-500/30">
+                        {project.period}
+                      </div>
                       <h3 className="text-xl font-bold mb-2 group-hover:text-cyan-400 transition-colors">{project.title}</h3>
                       <p className="text-sm text-slate-400 mb-4 leading-relaxed">{project.description}</p>
                       <button
