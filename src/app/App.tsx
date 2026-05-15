@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import { TypeAnimation } from 'react-type-animation';
+import { Analytics } from '@vercel/analytics/react';
 import {
   Code,
   Database,
@@ -915,7 +916,7 @@ export default function App() {
                   title: 'Hệ thống tư vấn tuyển sinh tích hợp AI và Security',
                   description: 'Đề tài cấp trường phát triển sản phẩm tư vấn tuyển sinh, chọn ngành/chuyên ngành cho Trường Đại học Điện lực.',
                   contribution: 'Tôi đang tham gia phân tích nhu cầu thí sinh, chuẩn bị dữ liệu ngành học/chuyên ngành, xây dựng luồng hỏi đáp tư vấn, kiểm tra câu trả lời gợi ý và bổ sung các yêu cầu bảo mật cho thông tin người dùng.',
-                  status: 'Đề tài cấp trường - Đang thực hiện',
+                  status: 'Đ��� tài cấp trường - Đang thực hiện',
                   type: 'ongoing',
                   icon: Lightbulb,
                   color: 'from-orange-500 to-red-500',
@@ -1192,6 +1193,7 @@ export default function App() {
           }
         }
       `}</style>
+      <Analytics />
     </div>
   );
 }
